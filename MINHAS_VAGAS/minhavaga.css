@@ -1,0 +1,82 @@
+body {
+      background-color: #9ec6f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .barra1, .barra2, .barra3 {
+      background-color: #3e64c5;
+      border-radius: 10px;
+      position: absolute;
+    }
+
+
+     .barra1 {
+      height: 60vh;
+      width: 15%;
+      bottom: 20%;
+      left: -1%;
+    }
+
+    .barra2 {
+      height: 70vh;
+      width: 10%;
+      bottom: 0;
+      right: 0;
+    }
+
+    .barra3 {
+      height: 25vh;
+      width: 20%;
+      bottom: 0;
+      right: 4%;
+      border-radius: 5px;
+    }
+
+     .minhavaga {
+      width: 30%;
+      position: absolute;
+      top: 20%;
+      right: 35%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color:#304e99;
+      height: 50vh;
+      border-radius: 10px;
+      overflow-y: auto;
+    }
+
+    .minhavaga h1{
+        font-family: sans-serif;
+        text-align: left;
+        width: 100%;
+        padding-left: 40px;
+        font-weight: 300;
+    }
+
+    .minhavaga input{
+        background-color: rgb(224, 224, 224);
+        width: 80%;
+        padding: 7px;
+        border-radius: 20px;
+        margin-top: 10px;
+    }
+
+    .minhavaga::-webkit-scrollbar {
+  width: 8px;
+}
+
+.minhavaga::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.minhavaga::-webkit-scrollbar-thumb {
+  background: #3e64c5;
+  border-radius: 10px;
+}
+
+.minhavaga::-webkit-scrollbar-thumb:hover {
+  background: #2c4aa3;
+}

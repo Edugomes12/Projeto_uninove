@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Vagas - Estacionamento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--  MENU SUPERIOR  -->
+  <header class="menu">
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Minha Vaga</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <!--  CONTEÚDO PRINCIPAL  -->
+  <main>
+    <h1 class="titulo">Controle de Vagas</h1>
+
+    <section class="caixa-vagas">
+      <h2>Vagas Disponíveis</h2>
+
+      <div class="contador">
+        <p><strong>Total:</strong> <span id="total">8</span></p>
+        <p><strong>Livres:</strong> <span id="livres">5</span></p>
+        <p><strong>Ocupadas:</strong> <span id="ocupadas">3</span></p>
+      </div>
+
+      <div class="lista-vagas">
+        <div class="vaga livre" onclick="alternarStatus(this)">
+          <span>Vaga 01</span>
+          <span class="status">Livre</span>
+        </div>
+        <div class="vaga ocupada" onclick="alternarStatus(this)">
+          <span>Vaga 02</span>
+          <span class="status">Ocupada</span>
+        </div>
+        <div class="vaga livre" onclick="alternarStatus(this)">
+          <span>Vaga 03</span>
+          <span class="status">Livre</span>
+        </div>
+        <div class="vaga ocupada" onclick="alternarStatus(this)">
+          <span>Vaga 04</span>
+          <span class="status">Ocupada</span>
+        </div>
+        <div class="vaga livre" onclick="alternarStatus(this)">
+          <span>Vaga 05</span>
+          <span class="status">Livre</span>
+        </div>
+        <div class="vaga ocupada" onclick="alternarStatus(this)">
+          <span>Vaga 06</span>
+          <span class="status">Ocupada</span>
+        </div>
+        <div class="vaga livre" onclick="alternarStatus(this)">
+          <span>Vaga 07</span>
+          <span class="status">Livre</span>
+        </div>
+        <div class="vaga livre" onclick="alternarStatus(this)">
+          <span>Vaga 08</span>
+          <span class="status">Livre</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

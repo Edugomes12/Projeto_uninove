@@ -1,0 +1,152 @@
+/*  CONFIGURAÇÃO GERAL  */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #9EC6F4, #6ea0e6);
+    margin: 0;
+    padding: 0;
+    color: #222;
+  }
+  
+  /*  MENU SUPERIOR  */
+  .menu {
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px 40px;
+    margin: 0;
+    gap: 40px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .menu a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #547aff;
+    transition: width 0.3s ease;
+  }
+  
+  .menu a:hover {
+    color: #547aff;
+  }
+  
+  .menu a:hover::after {
+    width: 100%;
+  }
+  
+  /*  TÍTULO  */
+  .titulo {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin-top: 40px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    letter-spacing: 1px;
+  }
+  
+  /*  CAIXA PRINCIPAL  */
+  .caixa-vagas {
+    background-color: #fff;
+    border-radius: 16px;
+    width: 380px;
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .caixa-vagas h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /*  CONTADOR  */
+  .contador {
+    display: flex;
+    justify-content: space-around;
+    background: #f3f6fc;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /*  LISTA DE VAGAS  */
+  .vaga {
+    background-color: #f5f5f5;
+    border-left: 6px solid #4CAF50;
+    border-radius: 10px;
+    padding: 12px 15px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .vaga.ocupada {
+    border-left: 6px solid #E53935;
+    background-color: #fce8e8;
+  }
+  
+  .vaga:hover {
+    transform: scale(1.02);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  }
+  
+  /* Status à direita */
+  .vaga .status {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4CAF50;
+  }
+  
+  .vaga.ocupada .status {
+    color: #E53935;
+  }
+  
+  /*  RESPONSIVIDADE  */
+  @media (max-width: 600px) {
+    .menu ul {
+      flex-direction: column;
+      gap: 15px;
+      padding: 10px;
+    }
+  
+    .caixa-vagas {
+      width: 90%;
+    }
+  
+    .titulo {
+      font-size: 24px;
+    }
+  }
+  
